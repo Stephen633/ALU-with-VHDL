@@ -1,0 +1,159 @@
+
+*** Running vivado
+    with args -log ALU_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_1.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ALU_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 585.254 ; gain = 182.641
+Command: read_checkpoint -auto_incremental -incremental E:/VHDL/alu_1/alu_1.srcs/utils_1/imports/synth_1/ALU_1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/VHDL/alu_1/alu_1.srcs/utils_1/imports/synth_1/ALU_1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ALU_1 -part xa7s6cpga196-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7s6'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7s6'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20268
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.820 ; gain = 438.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU_1' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:18]
+INFO: [Synth 8-3491] module 'ADD' declared at 'E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ADD.vhd:8' bound to instance 'u1' of component 'ADD' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ADD' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ADD.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ADD' (0#1) [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ADD.vhd:16]
+INFO: [Synth 8-3491] module 'MINUS' declared at 'E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MINUS.vhd:8' bound to instance 'u2' of component 'MINUS' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'MINUS' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MINUS.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MINUS' (0#1) [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MINUS.vhd:16]
+INFO: [Synth 8-3491] module 'MUL' declared at 'E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:6' bound to instance 'u3' of component 'MUL' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'MUL' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:15]
+	Parameter bits bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 'temp1' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:19]
+WARNING: [Synth 8-614] signal 'temp2' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'MUL' (0#1) [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:15]
+INFO: [Synth 8-3491] module 'DIVIDE' declared at 'E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:6' bound to instance 'u4' of component 'DIVIDE' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'DIVIDE' [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:16]
+	Parameter bits bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'temp2' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:22]
+WARNING: [Synth 8-614] signal 'temp1' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:22]
+WARNING: [Synth 8-614] signal 'temp3' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'DIVIDE' (0#1) [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/DIVIDE.vhd:16]
+WARNING: [Synth 8-614] signal 'S1' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:61]
+WARNING: [Synth 8-614] signal 'S2' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:61]
+WARNING: [Synth 8-614] signal 'S3' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:61]
+WARNING: [Synth 8-614] signal 'S4' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:61]
+WARNING: [Synth 8-614] signal 'C4' is read in the process but is not in the sensitivity list [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ALU_1' (0#1) [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/ALU_1.vhd:18]
+WARNING: [Synth 8-3848] Net result in module/entity MUL does not have driver. [E:/VHDL/alu_1/alu_1.srcs/sources_1/new/MUL.vhd:11]
+WARNING: [Synth 8-7129] Port a[15] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module DIVIDE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[31] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[30] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[29] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[28] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[27] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[26] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[25] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[24] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[23] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[22] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[21] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[20] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[19] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[18] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[17] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[16] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[15] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[14] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[13] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[12] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[11] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[10] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[9] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[8] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[7] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[6] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[5] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[4] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[3] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[2] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[1] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port result[0] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[15] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[14] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[13] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[12] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[11] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[10] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module MUL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module MUL is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1142.676 ; gain = 545.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1142.676 ; gain = 545.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7s6cpga196-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1142.676 ; gain = 545.188
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7s6cpga196-2I
